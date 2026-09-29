@@ -101,13 +101,3 @@ if compare:
     ].copy()
     st.bar_chart(comp.set_index("candidate")[["evidence","novelty","semantic_match","research_match"]])
 
-st.divider()
-st.subheader("🧪 Suggested hackathon extensions")
-st.markdown("""
-- Replace the synthetic table with a properly licensed public biomedical dataset.
-- Add molecular descriptors/fingerprints with RDKit in a research environment.
-- Add target–disease knowledge-graph relationships.
-- Add an uncertainty/explanation panel for every model output.
-- Add dataset provenance and citation tracking.
-- Add a model evaluation page with held-out test data and metrics.
-""")
